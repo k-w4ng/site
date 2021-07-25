@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script type="text/javascript">
+     function make()
+     {
+          document.getElementById('link').value = 
+            "https://ssb.oit.nd.edu/pls/BNRPROD/!cl_sam.fuse?action=create_plan_from_cart&term_code=202110&cart_name=default&plan_name=Custom%20Plan&crn_list=" +
+            document.getElementById('CRNS').value +
+            "&return_loc=https%3A%2F%2Fbxeregprod.oit.nd.edu%2FStudentRegistration%2Fssb%2Fplan%2FselectPlan";
+     }
+    </script>
+  </head>
+  
+<body>
+
+CRNs, comma separated <input type="text" id="CRNS" oninput="make()"  /><br/>
+link  <input type="text" id="link" />
+</body>
+</html>
